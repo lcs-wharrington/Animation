@@ -26,15 +26,6 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
 
-
-
-
-
-
-
-
-
-
 // Draw the six lines to start th design (bottom-left corner)
 canvas.drawAxes()
 canvas.drawLine(from: Point(x: 0, y: 350), to: Point(x:50, y: 0))
@@ -65,6 +56,7 @@ canvas.drawLine(from: Point(x: 200, y: 400), to: Point(x: 400, y: 200))
 canvas.drawLine(from: Point(x: 150, y: 400), to: Point(x: 400, y: 250))
 canvas.drawLine(from: Point(x: 100, y: 400), to: Point(x: 400, y: 300))
 canvas.drawLine(from: Point(x: 50, y: 400), to: Point(x: 400, y: 350))
+
 /*:
  ## Show the Assistant Editor
  Don't see any results?
