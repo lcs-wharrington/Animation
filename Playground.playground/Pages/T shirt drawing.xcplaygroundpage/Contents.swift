@@ -46,14 +46,21 @@ PlaygroundPage.current.liveView = canvas
  */
 
 //The Drawing
-canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 50)
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 0)
 
-var vertices: [Point] = [ ] // empty list of vertices
-vertices.append(Point (x: 300, y: 950)) // start
-vertices.append(Point (x: 500, y: 900))
-vertices.append(Point (x: 500, y: 800)) // end
+var vertices1: [Point] = [ ] // empty list of vertices
+vertices1.append(Point (x: 300, y: 950)) // start
+vertices1.append(Point (x: 500, y: 900))
+vertices1.append(Point (x: 500, y: 800)) // end
+canvas.drawCustomShape(with: vertices1)
 
-canvas.drawCustomShape(with: vertices)
+
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
+var vertices2: [Point] = [] // empty list of vertices
+vertices2.append(Point (x: 700, y: 950)) // start
+vertices2.append(Point (x: 500, y: 900))
+vertices2.append(Point (x: 500, y: 800)) // end
+canvas.drawCustomShape(with: vertices2)
 
 /*:
  ## Show the Assistant Editor
