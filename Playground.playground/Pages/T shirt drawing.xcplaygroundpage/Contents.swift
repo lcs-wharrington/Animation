@@ -44,23 +44,44 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+//Initialize variables
+var leftSideAlpha = 0
+var rightSideAlpha = 100
 
 //The Drawing
-canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 0)
 
+canvas.defaultLineWidth = 2
+
+for y in stride(from: 950, through: 500, by: -150)
+
+{
+    
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: leftSideAlpha)
+    
 var vertices1: [Point] = [ ] // empty list of vertices
-vertices1.append(Point (x: 300, y: 950)) // start
-vertices1.append(Point (x: 500, y: 900))
-vertices1.append(Point (x: 500, y: 800)) // end
+    
+vertices1.append(Point (x: 300, y: y)) // start
+vertices1.append(Point (x: 500, y: y - 50))
+vertices1.append(Point (x: 500, y: y - 150 )) // end
+    
 canvas.drawCustomShape(with: vertices1)
+   
+    
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: rightSideAlpha)
+    
+var vertices2: [Point] = [] // empty list of vertice
 
-
-canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
-var vertices2: [Point] = [] // empty list of vertices
-vertices2.append(Point (x: 700, y: 950)) // start
-vertices2.append(Point (x: 500, y: 900))
-vertices2.append(Point (x: 500, y: 800)) // end
+vertices2.append(Point (x: 700, y: y)) // start
+vertices2.append(Point (x: 500, y: y - 50))
+vertices2.append(Point (x: 500, y: y - 150)) // end
+    
 canvas.drawCustomShape(with: vertices2)
+//Subtracting a third from Var
+//Loops 3 three times over causing inverted shading
+    leftSideAlpha = leftSideAlpha + 33
+    rightSideAlpha = rightSideAlpha - 33
+}
+
 
 /*:
  ## Show the Assistant Editor
