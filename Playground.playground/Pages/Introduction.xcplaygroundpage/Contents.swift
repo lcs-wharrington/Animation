@@ -1,21 +1,5 @@
-//: [Previous](@previous) / [Next](@next)
-//: # Introduction
-//:
-//: This is a playground that will let you draw shapes and other graphics easily.
-/*:
- ## Canvas size
- 
- Set the size of your desired canvas by adjusting the constants on lines 10 and 11.
- */
 let preferredWidth = 400
 let preferredHeight = 400
-/*:
- ## Required code
- 
- Lines 19 to 27 are required to make the playground run.
- 
- Please do not remove.
- */
 import Cocoa
 import PlaygroundSupport
 import CanvasGraphics
@@ -56,19 +40,3 @@ canvas.drawLine(from: Point(x: 200, y: 400), to: Point(x: 400, y: 200))
 canvas.drawLine(from: Point(x: 150, y: 400), to: Point(x: 400, y: 250))
 canvas.drawLine(from: Point(x: 100, y: 400), to: Point(x: 400, y: 300))
 canvas.drawLine(from: Point(x: 50, y: 400), to: Point(x: 400, y: 350))
-
-/*:
- ## Show the Assistant Editor
- Don't see any results?
- 
- Remember to show the Assistant Editor (1), and then switch to Live View (2):
- 
- ![timeline](timeline.png "Timeline")
-
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
