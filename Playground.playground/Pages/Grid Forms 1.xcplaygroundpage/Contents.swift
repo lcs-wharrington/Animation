@@ -1,4 +1,5 @@
 
+
 //Required Code
 //Canvas Sizeing
 let preferredWidth = 500
@@ -30,7 +31,7 @@ x
         let point2 = Int.random(in: 0...500)
         let size = Int.random(in: 0...50)
         let size2 = Int.random(in: 0...50)
-        let Colour = Int.random(in: 0...100)
+        let Colour = Int.random(in: 0...360)
         let Place1 = Int.random(in:0...500)
         let Place2 = Int.random(in:0...500)
         let Place3 = Int.random(in:0...500)
