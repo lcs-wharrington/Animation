@@ -51,5 +51,3 @@ for y in stride(from: 950, through: 500, by: -150)
     leftSideAlpha = leftSideAlpha + 33
     rightSideAlpha = rightSideAlpha - 33
 }
-
-canvas.drawAxes(withScale: true, by: 500)
