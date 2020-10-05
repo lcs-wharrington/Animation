@@ -41,119 +41,15 @@ for step in stride(from: 25, through: 175, by: 25) {
     // Top left
     canvas.drawLine(from: Point(x: step, y: 400 - step), to: Point(x: 0, y: 400 - step))
     canvas.drawLine(from: Point(x: step, y: 400 - step), to: Point(x: step, y: 400))
+    
+    // Bottom right
+    canvas.drawLine(from: Point(x: 400 - step, y: step), to: Point(x: 400, y: step))
+    canvas.drawLine(from: Point(x: 400 - step, y: step), to: Point(x: 400 - step, y: 0))
+    
+    // Top right
+    canvas.drawLine(from: Point(x: 400 - step, y: 400 - step), to: Point(x: 400 - step, y: 400))
+    canvas.drawLine(from: Point(x: 400 - step, y: 400 - step), to: Point(x: 400, y: 400 - step))
 }
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 25, y: 25), to: Point(x: 0, y: 25))
-//canvas.drawLine(from: Point(x: 25, y: 25), to: Point(x: 25, y: 0))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 50, y: 50), to: Point(x: 50, y: 0))
-//canvas.drawLine(from: Point(x: 50, y: 50), to: Point(x: 0, y: 50))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 75, y: 75), to: Point(x: 75, y: 0))
-//canvas.drawLine(from: Point(x: 75, y: 75), to: Point(x: 0, y: 75))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 100, y: 100), to: Point(x: 0, y: 100))
-//canvas.drawLine(from: Point(x: 100, y: 100), to: Point(x: 100, y: 0))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 125, y: 125), to: Point(x: 125, y: 0))
-//canvas.drawLine(from: Point(x: 125, y: 125), to: Point(x: 0, y: 125))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 150, y: 150), to: Point(x: 150, y: 0))
-//canvas.drawLine(from: Point(x: 150, y: 150), to: Point(x: 0, y: 150))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 175, y: 175), to: Point(x: 175, y: 0))
-//canvas.drawLine(from: Point(x: 175, y: 175), to: Point(x: 0, y: 175))
-//canvas.lineColor = black
-
-//Top Left
-//canvas.drawLine(from: Point(x: 25, y: 400 - 25), to: Point(x: 0, y: 375))
-//canvas.drawLine(from: Point(x: 25, y: 375), to: Point(x: 25, y: 400))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 50, y: 400 - 50), to: Point(x: 50, y: 400))
-//canvas.drawLine(from: Point(x: 50, y: 350), to: Point(x: 0, y: 350))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 75, y: 400 - 75), to: Point(x: 75, y: 400))
-//canvas.drawLine(from: Point(x: 75, y: 325), to: Point(x: 0, y: 325))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 100, y: 300), to: Point(x: 100, y: 400))
-//canvas.drawLine(from: Point(x: 100, y: 300), to: Point(x: 0, y: 300))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 125, y: 275), to: Point(x: 125, y: 400))
-//canvas.drawLine(from: Point(x: 125, y: 275), to: Point(x: 0, y: 275))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 150, y: 250), to: Point(x: 150, y: 400))
-//canvas.drawLine(from: Point(x: 150, y: 250), to: Point(x: 0, y: 250))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 175, y: 225), to: Point(x: 175, y: 400))
-//canvas.drawLine(from: Point(x: 175, y: 225), to: Point(x: 0, y: 225))
-
-//Top Right
-for step in stride(from: 375, through: 225, by: -25) {
-    
-    if step % 50 == 0 {
-    canvas.lineColor = beige
-    }else{
-        canvas.lineColor = black
-    }
-    canvas.drawLine(from: Point(x: step, y: step), to: Point(x: 400, y: step))
-    canvas.drawLine(from: Point(x: step, y: step), to: Point(x: step, y: 400))
-    
-}
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 375, y: 375), to: Point(x: 375, y: 400))
-//canvas.drawLine(from: Point(x: 375, y: 375), to: Point(x: 400, y: 375))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 350, y: 350), to: Point(x: 350, y: 400))
-//canvas.drawLine(from: Point(x: 350, y: 350), to: Point(x: 400, y: 350))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 325, y: 325), to: Point(x: 325, y: 400))
-//canvas.drawLine(from: Point(x: 325, y: 325), to: Point(x: 400, y: 325))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 300, y: 300), to: Point(x: 300, y: 400))
-//canvas.drawLine(from: Point(x: 300, y: 300), to: Point(x: 400, y: 300))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 275, y: 275), to: Point(x: 275, y: 400))
-//canvas.drawLine(from: Point(x: 275, y: 275), to: Point(x: 400, y: 275))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 250, y: 250), to: Point(x: 250, y: 400))
-//canvas.drawLine(from: Point(x: 250, y: 250), to: Point(x: 400, y: 250))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 225, y: 225), to: Point(x: 225, y: 400))
-//canvas.drawLine(from: Point(x: 225, y: 225), to: Point(x: 400, y: 225))
-
-//Bottom Right
-for step in stride(from: 375, through: 225, by: 25) {
-    
-    if step % 50 == 0 {
-    canvas.lineColor = beige
-    }else{
-        canvas.lineColor = black
-    }
-    canvas.drawLine(from: Point(x: step, y: step), to: Point(x: 0, y: step))
-    canvas.drawLine(from: Point(x: step, y: step), to: Point(x: step, y: 0))
-    
-}
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 375, y: 25), to: Point(x: 400, y: 25))
-//canvas.drawLine(from: Point(x: 375, y: 25), to: Point(x: 375, y: 0))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 350, y: 50), to: Point(x: 400, y: 50))
-//canvas.drawLine(from: Point(x: 350, y: 50), to: Point(x: 350, y: 0))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 325, y: 75), to: Point(x: 400, y: 75))
-//canvas.drawLine(from: Point(x: 325, y: 75), to: Point(x:325, y: 0))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 300, y: 100), to: Point(x: 400, y: 100))
-//canvas.drawLine(from: Point(x: 300, y: 100), to: Point(x: 300, y: 0))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 275, y: 125), to: Point(x: 400, y: 125))
-//canvas.drawLine(from: Point(x: 275, y: 125), to: Point(x: 275, y: 0))
-//canvas.lineColor = beige
-//canvas.drawLine(from: Point(x: 250, y: 150), to: Point(x: 400, y: 150))
-//canvas.drawLine(from: Point(x: 250, y: 150), to: Point(x: 250, y: 0))
-//canvas.lineColor = black
-//canvas.drawLine(from: Point(x: 225, y: 175), to: Point(x: 400, y: 175))
-//canvas.drawLine(from: Point(x: 225, y: 175), to: Point(x: 225, y: 0))
 
 //Axes
 canvas.defaultLineWidth = 1
