@@ -53,4 +53,3 @@ for y in stride(from: 0, through: 400, by: 40){
     }
 }
 canvas.drawAxes(withScale: true, by: 40)
-

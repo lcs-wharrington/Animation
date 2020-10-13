@@ -23,7 +23,7 @@ canvas.fillColor = pink
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 canvas.defaultLineWidth = 15
 
-//Bottom left
+//The lines
 for step in stride(from: 25, through: 175, by: 25) {
     
     step
