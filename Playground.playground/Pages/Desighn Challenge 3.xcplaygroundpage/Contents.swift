@@ -28,4 +28,10 @@ vertices.append(Point (x: 0, y: 600))
 vertices.append(Point (x: 400, y: 600))
 vertices.append(Point (x: 400, y: 0)) // end
 canvas.drawCustomShape(with: vertices)
-//the shape
+//The Shape
+canvas.drawShapesWithFill = false
+canvas.borderColor = offWhite
+canvas.defaultBorderWidth = 10
+for step in stride(from: 400, through: 0, by: -50) {
+    canvas.drawEllipse(at: Point(x: 200, y: 400), width: step, height: step)
+}
