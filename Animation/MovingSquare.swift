@@ -17,8 +17,8 @@ class MovingSquare: NSObject, Sketchable {
     var canvas: Canvas
     
     //vertical position
-    var y = 250
-    var x = 250
+    var y = Int.random(in:0...450)
+    var x = Int.random(in:0...450)
     // This function runs once
     override init() {
         
@@ -31,14 +31,12 @@ class MovingSquare: NSObject, Sketchable {
     func draw() {
         
         //change vertical position
-        y -= 1
-        x += 1
-        
+        let y = Int.random(in:00...500)
+        let x = Int.random(in:0...500)
+        let Colour = Int.random(in: 0...360)
+        canvas.fillColor = Color(hue: Colour, saturation: 100, brightness: 100, alpha: 100)
         //draw square in middle of canvas
-        canvas.drawRectangle(at: Point(x: x, y: y), width: 50, height: 50, anchoredBy: .centre)
-        canvas.drawRectangle(at: Point(x: y, y: x), width: 50, height: 50, anchoredBy: .centre)
-        canvas.drawRectangle(at: Point(x: x, y: x), width: 50, height: 50, anchoredBy: .centre)
-        canvas.drawRectangle(at: Point(x: y, y: y), width: 50, height: 50, anchoredBy: .centre)
+        canvas.drawRectangle(at: Point(x: x, y: y), width: 100, height: 100)
     }
     
 }
