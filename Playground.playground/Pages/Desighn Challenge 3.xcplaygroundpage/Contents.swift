@@ -2,7 +2,7 @@
 //Canvas Sizeing
 let preferredWidth = 400
 let preferredHeight = 600
-
+//Will Harrington
 import Cocoa
 import PlaygroundSupport
 import CanvasGraphics
@@ -31,7 +31,16 @@ canvas.drawCustomShape(with: vertices)
 //The Shape
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
-canvas.defaultBorderWidth = 10
-for step in stride(from: 400, through: 0, by: -50) {
+canvas.defaultBorderWidth = 12
+for step in stride(from: 390, through: 0, by: -48) {
     canvas.drawEllipse(at: Point(x: 200, y: 400), width: step, height: step)
 }
+canvas.drawShapesWithFill = false
+canvas.borderColor = translucentPink
+canvas.defaultBorderWidth = 12
+for step in stride(from: 390, through: 0, by: -48) {
+    canvas.drawEllipse(at: Point(x: 200, y: 500), width: step, height: step)
+}
+//End of shape 
+canvas.defaultLineWidth = 1
+canvas.drawAxes(withScale: true, by: 50)
