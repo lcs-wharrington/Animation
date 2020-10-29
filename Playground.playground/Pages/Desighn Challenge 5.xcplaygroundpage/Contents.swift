@@ -17,8 +17,9 @@ PlaygroundPage.current.liveView = canvas
 
 // Colour Things
 let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
-let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
+let blue = Color(hue: 240, saturation: 100, brightness: 35, alpha: 75)
+let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 25)
 
 // Borders off
 canvas.drawShapesWithBorders = false
@@ -26,6 +27,11 @@ canvas.drawShapesWithBorders = false
 // Background red
 canvas.fillColor = deepRed
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+// Title
+canvas.textColor = Color.black
+canvas.drawText(message: "the clash", at: Point(x: 0, y: 405), size: 60, kerning: 1)
+
 
 // Cricles
 canvas.fillColor = offWhite
@@ -44,6 +50,9 @@ for y in stride(from: 0, through: 300, by: 100){
         
         canvas.fillColor = deepRed
         canvas.drawEllipse(at: Point(x: x + 50, y: y + 50), width: 65, height: 65)
+        canvas.fillColor = blue
+        canvas.drawEllipse(at: Point(x: x + 75, y: y + 25), width: 65, height: 65)
+        canvas.fillColor = black
+        canvas.drawEllipse(at: Point(x: x + 25, y: y + 75), width: 65, height: 65)
     }
 }
-canvas.drawAxes(withScale: true, by: 40)
