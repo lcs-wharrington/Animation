@@ -22,7 +22,8 @@ let LimeGreen = Color(hue: 106, saturation: 64, brightness: 69, alpha: 100)
 
 canvas.fillColor = LimeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
-
+canvas.textColor = Color.black
+canvas.drawText(message: "J.Cole", at: Point(x: 0, y: 405), size: 60, kerning: 1)
 for y in stride(from: 0, through: 300, by: 100){
     for x in stride(from: 0, through: 300, by: 100){
         
@@ -39,6 +40,7 @@ for y in stride(from: 0, through: 300, by: 100){
         vertices1.append(Point (x: x + 100, y: y + 100))
         
         canvas.drawCustomShape(with: vertices1)
-       
+        canvas.textColor = Color.black
+        
     }
 }
