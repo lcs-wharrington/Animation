@@ -20,6 +20,7 @@ class Spiral: NSObject, Sketchable {
 
     // Keep track of the prior point
     var lastPoint: Point
+    var lastPoint2: Point
     
 
     // This function runs once
@@ -32,7 +33,7 @@ class Spiral: NSObject, Sketchable {
 
         // Set the starting position in the middle of the canvas
         lastPoint = Point(x: 0, y: 0)
-                
+        lastPoint2 = Point(x: 0, y: 0)
 
     }
     
@@ -57,15 +58,14 @@ class Spiral: NSObject, Sketchable {
             let radius = CGFloat(canvas.frameCount) / 0.2
 
             // Set the angle equal to the frameCount
-            let angle = CGFloat(canvas.frameCount + 90)
+            let angle = CGFloat(canvas.frameCount + 45)
 
             // Determine the next x position
             let nextX = cos(angle.asRadians()) * radius
 
             // Determine the next y position
             let nextY = sin(angle.asRadians()) * radius
-            
-
+        
             // Set the next point
             let nextPoint = Point(x: nextX, y: nextY)
 //            print(nextPoint)
@@ -77,6 +77,34 @@ class Spiral: NSObject, Sketchable {
 
             // Set the "new" last point, now that the line is drawn
             lastPoint = nextPoint
+
+        }
+        
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 90)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint2, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint2 = nextPoint
 
         }
         
