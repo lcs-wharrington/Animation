@@ -8,7 +8,7 @@ import PlaygroundSupport
 import CanvasGraphics
 
 // Create canvas
-let canvas = Canvas(width: preferredWidth, height: preferredHeight)
+let canvas = Canvas(width: preferredWidth, height: preferredHeight, quality: .Ultra)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
@@ -34,7 +34,7 @@ for y in stride(from: 0, through: 300, by: 100){
     for x in stride(from: 0, through: 300, by: 100){
         
         canvas.fillColor = OffWhite
-        canvas.drawRectangle(at: Point(x: x + 50, y: y + 50), width: 75, height: 75, anchoredBy: .centre)
+        //canvas.drawRectangle(at: Point(x: x + 50, y: y + 50), width: 75, height: 75, anchoredBy: .centre)
         canvas.fillColor = yellow
         canvas.drawEllipse(at: Point(x: x + 50, y: y + 50), width: 50, height: 50)
        
@@ -50,3 +50,4 @@ for y in stride(from: 0, through: 300, by: 100){
         
     }
 }
+canvas.copyToClipboard()

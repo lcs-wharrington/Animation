@@ -19,22 +19,32 @@ class Spiral: NSObject, Sketchable {
     
 
     // Keep track of the prior point
-    var lastPoint: Point
+    var lastPoint1: Point
     var lastPoint2: Point
-    
+    var lastPoint3: Point
+    var lastPoint4: Point
+    var lastPoint5: Point
+    var lastPoint6: Point
+    var lastPoint7: Point
+    var lastPoint8: Point
 
     // This function runs once
     override init() {
         
 
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1000, height: 1000)
                 
 
         // Set the starting position in the middle of the canvas
-        lastPoint = Point(x: 0, y: 0)
+        lastPoint1 = Point(x: 0, y: 0)
         lastPoint2 = Point(x: 0, y: 0)
-
+        lastPoint3 = Point(x: 0, y: 0)
+        lastPoint4 = Point(x: 0, y: 0)
+        lastPoint5 = Point(x: 0, y: 0)
+        lastPoint6 = Point(x: 0, y: 0)
+        lastPoint7 = Point(x: 0, y: 0)
+        lastPoint8 = Point(x: 0, y: 0)
     }
     
 
@@ -58,7 +68,7 @@ class Spiral: NSObject, Sketchable {
             let radius = CGFloat(canvas.frameCount) / 0.2
 
             // Set the angle equal to the frameCount
-            let angle = CGFloat(canvas.frameCount + 45)
+            let angle = CGFloat(canvas.frameCount + 0)
 
             // Determine the next x position
             let nextX = cos(angle.asRadians()) * radius
@@ -72,14 +82,41 @@ class Spiral: NSObject, Sketchable {
             
 
             // Draw a line from the last point to the next point
-            canvas.drawLine(from: lastPoint, to: nextPoint)
+            canvas.drawLine(from: lastPoint1, to: nextPoint)
             
 
             // Set the "new" last point, now that the line is drawn
-            lastPoint = nextPoint
+            lastPoint1 = nextPoint
 
         }
         
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 45)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint2, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint2 = nextPoint
+
+        }
         // Start drawing after the first frame
         if canvas.frameCount > 0 {
 
@@ -100,16 +137,150 @@ class Spiral: NSObject, Sketchable {
 //            print(nextPoint)
             
             // Draw a line from the last point to the next point
-            canvas.drawLine(from: lastPoint2, to: nextPoint)
+            canvas.drawLine(from: lastPoint3, to: nextPoint)
             
 
             // Set the "new" last point, now that the line is drawn
-            lastPoint2 = nextPoint
+            lastPoint3 = nextPoint
+
+        }
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 135)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint4, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint4 = nextPoint
+
+        }
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 180)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint5, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint5 = nextPoint
 
         }
         
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
 
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
 
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 225)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint6, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint6 = nextPoint
+
+        }
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 270)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint7, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint7 = nextPoint
+
+        }
+        // Start drawing after the first frame
+        if canvas.frameCount > 0 {
+
+            // Set the radius
+            let radius = CGFloat(canvas.frameCount) / 0.2
+
+            // Set the angle equal to the frameCount
+            let angle = CGFloat(canvas.frameCount + 315)
+
+            // Determine the next x position
+            let nextX = cos(angle.asRadians()) * radius
+
+            // Determine the next y position
+            let nextY = sin(angle.asRadians()) * radius
+        
+            // Set the next point
+            let nextPoint = Point(x: nextX, y: nextY)
+//            print(nextPoint)
+            
+            // Draw a line from the last point to the next point
+            canvas.drawLine(from: lastPoint8, to: nextPoint)
+            
+
+            // Set the "new" last point, now that the line is drawn
+            lastPoint8 = nextPoint
+
+        }
         
 
     }
