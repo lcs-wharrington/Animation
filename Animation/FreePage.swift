@@ -1,4 +1,3 @@
-//
 //  EmptySketch.swift
 //  Animation
 //
@@ -31,9 +30,8 @@ class Spiral: NSObject, Sketchable {
     // This function runs once
     override init() {
         
-
         // Create canvas object – specify size
-        canvas = Canvas(width: 1000, height: 1000)
+        canvas = Canvas(width: 1500, height: 1500)
                 
 
         // Set the starting position in the middle of the canvas
@@ -45,6 +43,9 @@ class Spiral: NSObject, Sketchable {
         lastPoint6 = Point(x: 0, y: 0)
         lastPoint7 = Point(x: 0, y: 0)
         lastPoint8 = Point(x: 0, y: 0)
+        
+        // Speed
+        canvas.framesPerSecond = 80
     }
     
 
@@ -55,7 +56,7 @@ class Spiral: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 5
+        canvas.defaultLineWidth = 1
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
@@ -65,7 +66,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 0)
@@ -94,7 +95,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 45)
@@ -121,7 +122,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 90)
@@ -148,7 +149,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 135)
@@ -175,7 +176,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 180)
@@ -204,7 +205,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 225)
@@ -231,7 +232,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 270)
@@ -258,7 +259,7 @@ class Spiral: NSObject, Sketchable {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.2
+            let radius = CGFloat(canvas.frameCount) / 1
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + 315)
