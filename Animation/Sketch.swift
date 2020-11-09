@@ -21,5 +21,6 @@ class Sketch: NSObject {
 //    var currentDrawing = FourCorners()
 //    var currentDrawing = BouncingCircle()
 //    var currentDrawing = FreePage()
-        var currentDrawing = Spiral()
+//        var currentDrawing = Spiral()
+    var currentDrawing = IndividualSprial()
 }

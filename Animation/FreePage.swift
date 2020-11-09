@@ -31,7 +31,7 @@ class Spiral: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 1500, height: 1500)
+        canvas = Canvas(width: 800, height: 800)
                 
 
         // Set the starting position in the middle of the canvas

@@ -28,6 +28,7 @@
 		81A9FADB219A151B003E6502 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9FADA219A151B003E6502 /* Helpers.swift */; };
 		81A9FADD219A156E003E6502 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9FADC219A156E003E6502 /* Color.swift */; };
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
+		EA1AEC992559A0810003D053 /* Individual sprial.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AEC982559A0810003D053 /* Individual sprial.swift */; };
 		EAA458E925487CBC000AEB7D /* FreePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA458E825487CBC000AEB7D /* FreePage.swift */; };
 		EAB0A31C253DC58B00D6ABCA /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A31B253DC58B00D6ABCA /* FiveCircles.swift */; };
 		EAB0A31F253DD03400D6ABCA /* FourCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A31E253DD03400D6ABCA /* FourCorners.swift */; };
@@ -117,6 +118,7 @@
 		81DBFC2322E96442005EDE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81DBFC2422E96442005EDE85 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = text; path = .tgz; sourceTree = "<group>"; };
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
+		EA1AEC982559A0810003D053 /* Individual sprial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Individual sprial.swift"; sourceTree = "<group>"; };
 		EAA458E825487CBC000AEB7D /* FreePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePage.swift; sourceTree = "<group>"; };
 		EAB0A31B253DC58B00D6ABCA /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		EAB0A31E253DD03400D6ABCA /* FourCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCorners.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				EAF07A8C2539CE99001E3990 /* MovingSquare.swift */,
 				EAA458E825487CBC000AEB7D /* FreePage.swift */,
+				EA1AEC982559A0810003D053 /* Individual sprial.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				EAF07A8D2539CE99001E3990 /* MovingSquare.swift in Sources */,
+				EA1AEC992559A0810003D053 /* Individual sprial.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
 				EAB0A322253DD32800D6ABCA /* BouncingCircle.swift in Sources */,
