@@ -22,14 +22,14 @@ class Spiral: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1500, height: 900)
              
         // Initialize many spirals
         for i in 1...18 {
             
             // Give the one spiral a starting angle of rotation
-            let spiral = IndividualSpiral(angleOffset: i * 20,
-                                          hue: Float(i) * 20)
+            let spiral = IndividualSpiral(angleOffset: i * 3,
+                                          hue: Float(i) * 21)
             
             // Add the new spiral to the list
             spirals.append(spiral)
@@ -42,10 +42,7 @@ class Spiral: NSObject, Sketchable {
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
 
-        // What frame are we on?
-//        print(canvas.frameCount)
-        
-        canvas.defaultLineWidth = 1
+        canvas.defaultlinewith = 20
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
