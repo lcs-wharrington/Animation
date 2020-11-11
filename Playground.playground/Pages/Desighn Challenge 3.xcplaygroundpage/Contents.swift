@@ -16,12 +16,13 @@ PlaygroundPage.current.liveView = canvas
 //Free code start
 
 // COLORS
-let lightBlue = Color(hue: 193, saturation: 100, brightness: 86, alpha: 100)
-let offWhite = Color(hue: 85, saturation: 8, brightness: 88, alpha: 100)
-let translucentPink = Color(hue: 325, saturation: 100, brightness: 81, alpha: 75)
+let orange = Color(hue: 21, saturation: 76, brightness: 94, alpha: 100)
+let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 65)
+let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
+let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
 //Backgroud Colour
-canvas.fillColor = lightBlue
+canvas.fillColor = orange
 var vertices: [Point] = [ ] // empty list of vertices
 vertices.append(Point (x: 0, y: 0)) // start
 vertices.append(Point (x: 0, y: 600))
@@ -33,13 +34,13 @@ canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
 canvas.defaultBorderWidth = 12
 for step in stride(from: 390, through: 0, by: -48) {
-    canvas.drawEllipse(at: Point(x: 200, y: 400), width: step, height: step)
+    canvas.drawRectangle(at: Point(x: 225, y: 375), width: step, height: step, anchoredBy: .centre)
 }
 canvas.drawShapesWithFill = false
-canvas.borderColor = translucentPink
+canvas.borderColor = blue
 canvas.defaultBorderWidth = 12
 for step in stride(from: 390, through: 0, by: -48) {
-    canvas.drawEllipse(at: Point(x: 200, y: 500), width: step, height: step)
+    canvas.drawRectangle(at: Point(x: 175, y: 375), width: step, height: step, anchoredBy: .centre)
 }
 //End of shape 
 canvas.defaultLineWidth = 1

@@ -16,7 +16,7 @@ class FiveCircles: NSObject, Sketchable {
     
     // Position of circle
     var offset: Int
-    
+    var a1: Int
     // This function runs once
     override init() {
         
@@ -25,21 +25,18 @@ class FiveCircles: NSObject, Sketchable {
         
         // Set starting position
         offset = 250
+        a1 = 5
     }
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
         // Change position
-            offset -= 1
+            offset += 1
         
         // Draw an ellipse in the middle of the canvas
-        canvas.drawEllipse(at: Point(x: 500 - offset, y: 450), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: offset, y: 350), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: 500 - offset, y: 250), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: offset, y: 150), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: 500 - offset, y: 50), width: 50, height: 50)
+        canvas.drawEllipse(at: Point(x: offset, y: offset), width: 50, height: 50)
+
     }
     
 }
-

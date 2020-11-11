@@ -16,18 +16,27 @@ class EmptySketch: NSObject, Sketchable {
     //       Therefore, the line immediately below must always be present.
     var canvas: Canvas
     
+    var offset: Int
     // This function runs once
     override init() {
         
         // Create canvas object – specify size
         canvas = Canvas(width: 500, height: 500)
+        
+        offset = 250
                 
     }
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
-        
+        offset -= 1
+    
+    canvas.drawEllipse(at: Point(x: 500 - offset, y: 450), width: 50, height: 50)
+    canvas.drawEllipse(at: Point(x: offset, y: 350), width: 50, height: 50)
+    canvas.drawEllipse(at: Point(x: 500 - offset, y: 250), width: 50, height: 50)
+    canvas.drawEllipse(at: Point(x: offset, y: 150), width: 50, height: 50)
+    canvas.drawEllipse(at: Point(x: 500 - offset, y: 50), width: 50, height: 50)
     }
     
 }
