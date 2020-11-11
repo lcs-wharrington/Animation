@@ -18,7 +18,8 @@ class Sketch: NSObject {
 //    var currentDrawing = StaticSketch()
 //    var currentDrawing = MovingSquare()
 //    var currentDrawing = FiveCircles()
-    var currentDrawing = FourCorners()
+//    var currentDrawing = FourCorners()
 //    var currentDrawing = BouncingCircle()
+    var currentDrawing = freepage()
 
 }

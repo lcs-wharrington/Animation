@@ -31,13 +31,15 @@ class FourCorners: NSObject, Sketchable {
     func draw() {
         
         // Change position
-            Offset -= 1
+        //            Offset -= 1
+        
+        Offset -= 1
+        
+        
         
         // Draw an ellipse in the middle of the canvas
         canvas.drawEllipse(at: Point(x: Offset, y: Offset), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: 500 - Offset, y: 500 - Offset), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: 500 - Offset, y: Offset), width: 50, height: 50)
-        canvas.drawEllipse(at: Point(x: Offset, y: 500 - Offset), width: 50, height: 50)
-    
-}
+        
+        
+    }
 }
