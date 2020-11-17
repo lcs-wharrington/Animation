@@ -42,7 +42,7 @@ class Spiral: NSObject, Sketchable {
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
 
-        canvas.defaultlinewith = 20
+        canvas.defaultLineWidth = 20
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))

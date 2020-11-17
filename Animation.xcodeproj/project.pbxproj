@@ -28,6 +28,8 @@
 		81A9FADB219A151B003E6502 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9FADA219A151B003E6502 /* Helpers.swift */; };
 		81A9FADD219A156E003E6502 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9FADC219A156E003E6502 /* Color.swift */; };
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
+		EA6F658925643AB800AF6DD2 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F658825643AB800AF6DD2 /* FunctionArt1.swift */; };
+		EA6F658C25643ACC00AF6DD2 /* MathFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F658B25643ACC00AF6DD2 /* MathFunction.swift */; };
 		EA91DC87255C7FCB00477851 /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA91DC86255C7FCB00477851 /* IndividualSpiral.swift */; };
 		EAB0A31C253DC58B00D6ABCA /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A31B253DC58B00D6ABCA /* FiveCircles.swift */; };
 		EAB0A31F253DD03400D6ABCA /* FourCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A31E253DD03400D6ABCA /* FourCorners.swift */; };
@@ -118,6 +120,8 @@
 		81DBFC2322E96442005EDE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81DBFC2422E96442005EDE85 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = text; path = .tgz; sourceTree = "<group>"; };
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
+		EA6F658825643AB800AF6DD2 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
+		EA6F658B25643ACC00AF6DD2 /* MathFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunction.swift; sourceTree = "<group>"; };
 		EA91DC86255C7FCB00477851 /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
 		EAB0A31B253DC58B00D6ABCA /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		EAB0A31E253DD03400D6ABCA /* FourCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCorners.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				EAF07A8C2539CE99001E3990 /* MovingSquare.swift */,
 				EADE9E182540ABEA00A84E8C /* Spiral.swift */,
 				EA91DC86255C7FCB00477851 /* IndividualSpiral.swift */,
+				EA6F658B25643ACC00AF6DD2 /* MathFunction.swift */,
+				EA6F658825643AB800AF6DD2 /* FunctionArt1.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -496,21 +502,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6F658925643AB800AF6DD2 /* FunctionArt1.swift in Sources */,
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				EAB0A31F253DD03400D6ABCA /* FourCorners.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				EA91DC87255C7FCB00477851 /* IndividualSpiral.swift in Sources */,
+				EA6F658C25643ACC00AF6DD2 /* MathFunction.swift in Sources */,
 				EAF07A8D2539CE99001E3990 /* MovingSquare.swift in Sources */,
-				EA1AEC992559A0810003D053 /* Individual sprial.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
 				EAB0A322253DD32800D6ABCA /* BouncingCircle.swift in Sources */,
 				EADE9E192540ABEA00A84E8C /* Spiral.swift in Sources */,
 				814ADAF1248E9F8200F80486 /* AudioAnalyser.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
-				EAA458E925487CBC000AEB7D /* FreePage.swift in Sources */,
 				814ADAFD248EB56900F80486 /* EmptySketch.swift in Sources */,
 				814ADAFF248EB5E300F80486 /* StaticSketch.swift in Sources */,
 				EAB0A31C253DC58B00D6ABCA /* FiveCircles.swift in Sources */,

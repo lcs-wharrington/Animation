@@ -22,7 +22,7 @@ class Sketch: NSObject {
 //    var currentDrawing = BouncingCircle()
 //    var currentDrawing = FreePage()
 //        var currentDrawing = Spiral()
-    var currentDrawing = IndividualSprial()
-    var currentDrawing = Spiral()
-
+//    var currentDrawing = IndividualSprial()
+//    var currentDrawing = Spiral()
+    var currentDrawing = FunctionArt1()
 }
