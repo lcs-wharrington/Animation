@@ -60,11 +60,15 @@ class FunctionArt1: NSObject, Sketchable {
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
 
-        // Update the position of all functions
-        for function in functions {
-            function.update(on: canvas, usingInputValue: canvas.frameCount)
-        }
+        for x in 0...canvas.width {
+            // Update the position of all functions
+            for function in functions {
+                function.update(on: canvas, usingInputValue: x)
+            }
 
+        }
+        
+     
     
     }
 
