@@ -33,7 +33,7 @@ class FunctionArt1: NSObject, Sketchable {
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
                                            c: 3,
                                            canvas: canvas,
-                                           type: .cubic)
+                                           type: .absoluteValue)
             
             // Add it to the list
             functions.append(newFunction)

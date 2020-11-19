@@ -67,6 +67,15 @@ class MathFunction {
     // Update (or draw) the position of this spiral
     func update(on canvas: Canvas, usingInputValue x: Int) {
 
+//        makesusre reDRAWS START OFF SCREEN
+        if x == 0 {
+            
+            // I want every function to begin off the left side of the canvas
+            self.lastPoint = Point(x: -1 * canvas.width / 2 - 5,
+                                   y: 0)
+            
+        }
+        
         // Start drawing after the first frame
         if x > 0 && x < canvas.width{
 
