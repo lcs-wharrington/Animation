@@ -21,19 +21,19 @@ class FunctionArt1: NSObject, Sketchable {
     
     // This function runs once
     override init() {
-        
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1450, height: 900)
              
         // Initialize many functions
-        for i in 1...20 {
+        for i in 1...5000 {
             
             // Create the function
-            let newFunction = MathFunction(a: 1.0,
-                                           k: 5.0,
+            let newFunction = MathFunction(a: 10.0,
+                                           k: 50.0,
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
-                                           c: 0,
-                                           canvas: canvas)
+                                           c: 3,
+                                           canvas: canvas,
+                                           type: .reciprocal)
             
             // Add it to the list
             functions.append(newFunction)
@@ -41,7 +41,7 @@ class FunctionArt1: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 60
+        canvas.framesPerSecond = 100
     }
 
     // This function runs repeatedly, forever, to create the animated effect
@@ -50,7 +50,7 @@ class FunctionArt1: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 1
+        canvas.defaultLineWidth = 25
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
