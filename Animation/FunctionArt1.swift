@@ -22,7 +22,7 @@ class FunctionArt1: NSObject, Sketchable {
     // This function runs once
     override init() {
         // Create canvas object – specify size
-        canvas = Canvas(width: 1450, height: 900)
+        canvas = Canvas(width: 500, height: 500)
              
         // Initialize many functions
         for i in 1...5000 {
@@ -46,11 +46,16 @@ class FunctionArt1: NSObject, Sketchable {
 
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
+        
+        //clear canvas
+        canvas.fillColor = Color(hue: 200, saturation: 1, brightness: 100, alpha: 100)
+        
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 500, height: 500)
 
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 25
+        canvas.defaultLineWidth = 1
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
