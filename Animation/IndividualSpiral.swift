@@ -51,7 +51,7 @@ class IndividualSpiral {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 10
+            let radius = CGFloat(canvas.frameCount) / 6
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + angleOffset)
