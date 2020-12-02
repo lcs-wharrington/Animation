@@ -101,6 +101,7 @@ class MathFunction {
                 nextY = a * exp((nextX - d) / k) + c
             case .reciprocal:
                 nextY = a * 1.0/((nextX - d) / k) + c
+                
             }
             
            

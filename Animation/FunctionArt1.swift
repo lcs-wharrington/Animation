@@ -25,13 +25,13 @@ class FunctionArt1: NSObject, Sketchable {
         canvas = Canvas(width: 500, height: 500)
              
         // Initialize many functions
-        for i in 1...25 {
+        for i in 1...20 {
             
             // Create the function
-            let newFunction = MathFunction(a: 1.0,
-                                           k: 2.5,
-                                           d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
-                                           c: 0,
+            let newFunction = MathFunction(a: 5,
+                                           k: 5,
+                                           d: CGFloat(i) * 5 - CGFloat(canvas.width / 2),
+                                           c: 5,
                                            canvas: canvas,
                                            type: .cubic)
             
@@ -41,33 +41,36 @@ class FunctionArt1: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 1
+        canvas.framesPerSecond = 80
     }
 
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
         //clear canvas
-        canvas.fillColor = Color(hue: 200, saturation: 1, brightness: 100, alpha: 20)
+        canvas.fillColor = Color(hue: 200, saturation: 1, brightness: 100, alpha: 5)
         
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: 500, height: 500)
 
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 1
+        canvas.defaultLineWidth = 100
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
         
         // randomly pick  vertical position
-        let newC = CGFloat.random(in: -150...150)
+//        let newC = CGFloat.random(in: -150...150)
 
         for x in 0...canvas.width {
             // Update the position of all functions
             for function in functions {
                 
-                function.c = newC
+//                function.c = newC
+                
+                function.a = 0.01 * sin(Degrees(canvas.frameCount).asRadians() / 0.1)
+                
                 function.update(on: canvas, usingInputValue: x)
             }
 

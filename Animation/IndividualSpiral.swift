@@ -36,6 +36,8 @@ class IndividualSpiral {
         // Set the hue
         self.hue = hue
         
+
+        
     }
     
     // 3. Methods
@@ -49,7 +51,7 @@ class IndividualSpiral {
         if canvas.frameCount > 0 {
 
             // Set the radius
-            let radius = CGFloat(canvas.frameCount) / 0.5
+            let radius = CGFloat(canvas.frameCount) / 10
 
             // Set the angle equal to the frameCount
             let angle = CGFloat(canvas.frameCount + angleOffset)
@@ -66,8 +68,8 @@ class IndividualSpiral {
             
             // Set the line color
             canvas.lineColor = Color(hue: hue,
-                                     saturation: 80,
-                                     brightness: 90,
+                                     saturation: 100,
+                                     brightness: 100,
                                      alpha: 100)
 
             // Draw a line from the last point to the next point
