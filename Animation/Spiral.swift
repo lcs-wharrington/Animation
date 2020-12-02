@@ -22,7 +22,7 @@ class Spiral: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1000, height: 1000)
              
         // Initialize many spirals
         for i in 50...300 {
